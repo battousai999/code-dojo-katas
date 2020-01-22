@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BankOCR-UserStory-1": {
+      "commandName": "Project",
+      "commandLineArgs": "sample01.txt"
+    }
+  }
+}

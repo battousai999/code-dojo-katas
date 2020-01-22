@@ -17,7 +17,7 @@ namespace Battousai999.CodeDojoKata.BankOcr.UserStory1
             if (blockLines.Count < 3 || blockLines.Count > 4)
                 throw new ArgumentException("There must be either 3 or 4 lines", nameof(lines));
 
-            if (blockLines.Count < 4 && !String.IsNullOrWhiteSpace(blockLines[3]))
+            if (blockLines.Count == 4 && !String.IsNullOrWhiteSpace(blockLines[3]))
                 throw new ArgumentException("The fourth line (if included) must be empty or only contain whitespace", nameof(lines));
 
             blockLines = blockLines.Take(3).ToList();
